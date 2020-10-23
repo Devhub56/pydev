@@ -2,12 +2,12 @@
 from math import *
 from future import *
 
-name = input('Enter your name : ')
+name = input('Enter your name : ') or '<unknown>'
 pwd = input('What is your password : ')
 database= [['fel','6140'],
-['James','2730']
+['james','2730']
 ]
-if [name,pwd] in database: print("welcome ,"+ name+ "," + "How can we help you today ?" )
+if [name.lower(),pwd] in database: print("welcome ,"+ name+ "," + "How can we help you today ?" )
 else:
     print('Acess Denied !!')
     exit()
@@ -46,3 +46,17 @@ else:
     label = labels.get(key, key)
     result = person.get(key, 'not available')
     print("{}'s {} is {}.".format(name, label, result))
+
+#if and boolean operations
+number = int(input('Enter a number between 1 and 10: '))
+if number <= 10 and number >= 1:
+    print('Great!')
+else:
+    print('Wrong!')
+#Asssert methods
+# assert condition, 'The age must be realistic'
+#a loop to ensure that the user enters a name, as follows:
+name = ''
+while not name.strip():
+     name = input('Please enter your name: ')
+print('Hello, {}!'.format(name))

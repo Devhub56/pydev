@@ -23,3 +23,21 @@ elif 6<=age<=120:
 d = {'x': 1, 'y': 2, 'z': 3}
 for key, value in d.items():
     print(key, 'corresponds to', value)
+#parallel iteration
+names = ['anne', 'beth', 'george', 'damon']
+ages = [12, 45, 32, 102]
+for i in range(len(names)):
+    print(names[i], 'is', ages[i], 'years old')
+#zip testing
+list(zip(names, ages))
+
+for name, age in zip(names, ages):
+    print(name, 'is', age, 'years old')
+#Now we can unpack the tuples in our loop.
+for name, age in zip(names, ages):
+    print(name, 'is', age, 'years old')
+#iteratingoverstrings using the enumerate method
+index = 0
+for index, string in enumerate(strings):
+    if 'xxx' in string:
+        strings[index] = '[censored]'
