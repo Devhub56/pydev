@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+
 import sys, shelve
 name = input('Enter your name : ') or '<unknown>'
 pwd = input('What is your password : ')
