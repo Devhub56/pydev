@@ -16,7 +16,7 @@ print(d,ef)
 #sub (Replaces left most occurance of a pattern)
 pat = '{name}'
 text = 'Dear {name}...'
-subbed=re.sub(pat, 'Mr. Gumby', text)
+subbed=re.sub(pat, 'Mr. Jimbo', text)
 print (subbed)
 
 emphasis_pattern = re.compile(r'''
@@ -33,4 +33,12 @@ pat = re.compile('From: (.*) <.*?>$')
 for line in fileinput.input():
     m = pat.match(line)
     if m: print(m.group(1))
+        
+pat2 = re.compile(r'[a-z\-\.]+@[a-z\-\.]+', re.IGNORECASE)
+addresses = set()
+for line in fileinput.input():
+    for address in pat.findall(line):
+        addresses.add(address)
+for address in sorted(addresses):
+    print address
 
