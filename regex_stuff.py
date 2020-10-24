@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-import re
+import re,fileinput
 some_random_text = 'alpha, beta,,,,gamma    delta'
 b=re.split('[, ]+', some_random_text)# you can add the maximum number of splits allowed.(maxsplit=n), where n is an integer
 print(b)
@@ -28,3 +28,9 @@ emphasis_pattern = re.compile(r'''
 ...            ''', re.VERBOSE)
 s=re.sub(emphasis_pattern, r'<em>\1</em>', 'Hello, *world*!')
 print (s)
+#find a sender in an email file 
+pat = re.compile('From: (.*) <.*?>$')
+for line in fileinput.input():
+    m = pat.match(line)
+    if m: print(m.group(1))
+
