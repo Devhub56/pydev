@@ -19,7 +19,6 @@ class talking_man(man):
         print(self.sound)
 b=man()
 b.eat()
-b.eat()
 t=talking_man()
 t.sing()
 #infinte sequence
