@@ -91,7 +91,7 @@ class circle_area(circle):
 
 
 saako=circle_area()
-print('The area of the Circle is ', (saako.area))
-sanko2=circle_area()
-sanko2.size=pie,1
-print ("we got sanko 2's area as:",(sanko2.area))
+print('The area of the Circle is ', (circle_1.area))
+circle_1=circle_area()
+circle_2.size=pie,1
+print ("we got circle 2's area as:",(circle_2.area))
