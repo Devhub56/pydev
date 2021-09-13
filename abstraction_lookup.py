@@ -9,7 +9,7 @@ init(storage)
 def lookup(teammates,label,name):
     return teammates[label].get(name)
 
-lookup(storage, 'second','Felix')
+lookup(storage, 'second','someguy')
 
 #another example
 def store(data, full_name):
@@ -24,5 +24,5 @@ def store(data, full_name):
             data[label][name] = [full_name]
 MyNames  = {}
 init(MyNames)
-store(MyNames, 'Felix Kigongo')
+store(MyNames, 'Carlbot')
 lookup(MyNames, 'middle', '')
