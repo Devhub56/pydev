@@ -5,7 +5,6 @@ def init(teammates):
     teammates['third']={}
 storage = {}
 init(storage)
-print(storage)
 
 def lookup(teammates,label,name):
     return teammates[label].get(name)
