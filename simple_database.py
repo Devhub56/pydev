@@ -3,7 +3,7 @@
 import sys, shelve
 name = input('Enter your name : ') or '<unknown>'
 pwd = input('What is your password : ')
-database= [['fel','6140'],['superuser','root']]
+database= [['some_guy','6140'],['superuser','root']]
 if [name.lower(),pwd] in database: print("welcome ,"+ name+ "," + "How can we help you today ?" )
 else:
     print('Acess Denied !!')
