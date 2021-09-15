@@ -15,12 +15,12 @@ class person:
 Bella=person()
 M=person()
 
-Bella.set_user_name("Bellarin Bella")
-M.set_user_name("Bella ")
+User.set_user_name("User Name")
+M.set_user_name("User ")
 
 Bella.greet_user()
 M.follow_up_user()
-#Person.greet(Bella) is an alt when you know that Bella is a Person
+#Person.greet(User) is an alt when you know that User is a Person
 #inheritance examples | super and sub class
 class Filter:
     def init(self):
