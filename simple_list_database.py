@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 import sys, shelve
 name = input('Enter your name : ') or '<unknown>'
