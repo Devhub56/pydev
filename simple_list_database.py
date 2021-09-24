@@ -3,8 +3,8 @@
 import sys, shelve
 name = input('Enter your name : ') or '<unknown>'
 pwd = input('What is your password : ')
-database= [['some_guy','6140'],['superuser','root']]
-if [name.lower(),pwd] in database: print("welcome ,"+ name+ "," + "How can we help you today ?" )
+su_database= [['some_guy','6140'],['superuser','root']]
+if [name.lower(),pwd] in su_database: print("welcome ,"+ name+ "," + "How can we help you today ?" )
 else:
     print('Acess Denied !!')
     exit()
@@ -43,7 +43,7 @@ def enter_command():
     return cmd
 
 def main():
-    database = shelve.open('/home/fel/Pydev/userdb.dat') # You may want to change this name
+    database = shelve.open('/path to directory where db is') # You may want to change this name
     try:
         while True:
             cmd = enter_command()
