@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 class person:
     def set_user_name(self,name):
         self.name=name
@@ -12,14 +12,14 @@ class person:
     def follow_up_user(self):
         print ("I hope you're progressing in your classes,{}".format(self.name))
 
-Bella=person()
-M=person()
+first_name =person()
+second_name=person()
 
 User.set_user_name("User Name")
 M.set_user_name("User ")
-
-Bella.greet_user()
-M.follow_up_user()
+#testing the behavior
+first_name.greet_user()
+Second_name.follow_up_user()
 #Person.greet(User) is an alt when you know that User is a Person
 #inheritance examples | super and sub class
 class Filter:
@@ -40,7 +40,7 @@ class Talker:
         print('Hi, my value is', self.value)
 class TalkingCalculator(Calculator, Talker):
     pass
-
+#test cases
 tc = TalkingCalculator()
 tc.calculate('1 + -2 * 3//5')
 tc.talk()
