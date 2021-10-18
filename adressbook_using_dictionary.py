@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 from math import *
 from future import *
 
@@ -7,7 +7,7 @@ pwd = input('What is your password : ')
 database= [['fel','6140'],
 ['james','2730']
 ]
-if [name.lower(),pwd] in database: print("welcome ,"+ name+ "," + "How can we help you today ?" )
+if [name.lower(),pwd] in database: print(f"welcome ," {name} "," + "How can we help you today ?" )
 else:
     print('Acess Denied !!')
     exit()
