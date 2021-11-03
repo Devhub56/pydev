@@ -33,5 +33,5 @@ def computer_guess (y):
         if user_feedback == 'l':
              low = random_number + 1
     print(f'Yay! The computer correctly guessed {random_number}.Which was your secret number!')
-computer_guess (upper limit)
+computer_guess (upper_limit)
     
