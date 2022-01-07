@@ -1,4 +1,4 @@
-
+# This example uses memoizaation, which over many iterations is very efficient 
 memo = {} # creating a dictionary to store our fibs helps us re-use some of the values from our earlier iterations 
 
 def fibs(n):
