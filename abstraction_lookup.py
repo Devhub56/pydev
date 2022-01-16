@@ -1,8 +1,9 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 def init(teammates):
     teammates['first']={}
     teammates['second']={}
     teammates['third']={}
+    teammates['fourth'] = {}
 storage = {}
 init(storage)
 
