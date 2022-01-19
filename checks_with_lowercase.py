@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+#checks or several instances of lowercase in a supplied string.
 def any_lowercase1(somestring):
     # Checks only first letter in string if it is lowercase or not and returns
     # boolean.
