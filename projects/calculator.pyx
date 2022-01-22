@@ -72,7 +72,7 @@ class circle:
     def __init__(self):
         self.p=pie
         self.r=float(input('Enter Radius of Circle : '))
-        assert 0 < self.r , 'The radius of the circle must be realistic , Adios...'
+        assert 0 < self.r , 'The radius of the circle must be realistic , pleasec check your value and try again!'
     def set_size(self,size):
         self.p,self.r = size
     def get_size(self):
