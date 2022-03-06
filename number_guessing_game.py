@@ -1,6 +1,7 @@
 import random
+# choose the ceiling oof the game
 max_number = int(input("Enter the upper limit of the game"))
-
+#user's turn to guess a number
 def guess_number (x):
     number = random.randint(1,x)
     user_guess = 0
