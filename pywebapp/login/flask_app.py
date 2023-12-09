@@ -10,7 +10,7 @@ app = Flask(__name__)
 
 
 app.secret_key = 'your secret key'
-
+#app configuration 
 app.config['MYSQL_HOST'] = 'localhost'
 app.config['MYSQL_USER'] = 'root'
 app.config['MYSQL_PASSWORD'] = 'password'
